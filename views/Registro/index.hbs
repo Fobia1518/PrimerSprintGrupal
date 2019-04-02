@@ -1,0 +1,27 @@
+{{>header}}
+<p> Bienvenido </p>
+<form id="rendered-form" action="/registrarUsuario?acc=crear&save=1" method="post">
+    <div class="rendered-form">
+        <div class="fb-text form-group field-id">
+            <label for="id" class="fb-text-label">Identificacion<span class="fb-required">*</span></label>
+            <input type="number" class="form-control" name="id" id="id" required="required" aria-required="true">
+        </div>
+        <div class="fb-text form-group field-nombre">
+            <label for="nombre" class="fb-text-label">Nombre<span class="fb-required">*</span></label>
+            <input type="text" class="form-control" name="nombre" id="nombre" required="required" aria-required="true">
+        </div>
+        <div class="fb-text form-group field-mail">
+            <label for="correo" class="fb-text-label">Correo Electronico<span class="fb-required">*</span></label>
+            <input type="email" class="form-control" name="correo" id="correo" required="required" aria-required="true">
+        </div>
+        <div class="fb-text form-group field-telefono">
+            <label for="telefono" class="fb-text-label">Telefono<span class="fb-required">*</span></label>
+            <input type="number" class="form-control" name="telefono" id="telefono" required="required" aria-required="true">
+        </div>
+        <div class="fb-button form-group field-enviar">
+            <button type="submit" class="btn-primary btn" name="enviar" style="primary" id="enviar">Enviar</button>
+        </div>
+    </div>
+</form>
+{{{listar}}}
+{{>footer}}
