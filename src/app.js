@@ -335,4 +335,6 @@ app.all('/Aspirante/frmCursos', (request, response) =>{
 });
 
 
-app.listen(3000);
+app.listen(3000, (err)=> {
+	console.log(`Listening port: 3000`);
+});
